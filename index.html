@@ -11,12 +11,18 @@
 <body>
 
     <header>
-        <h1>☀️ SkyCast</h1>
-        <p>Your daily weather companion</p>
+    <h1>☀️ SkyCast</h1>
+    <p>Your daily weather companion</p>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#current-weather">Current Weather</a>
+        <a href="#forecast">5-Day Forecast</a>
+    </nav>
     </header>
 
     <main>
-        <section class="search-section">
+        <section class="search-section" id="home">
             <h2>Check the Weather</h2>
             <p>Enter a city to discover its weather conditions.</p>
 
@@ -33,7 +39,7 @@
             <p id="status" role="status" aria-live="polite"></p>
         </section>
 
-        <section class="weather-card">
+        <section class="weather-card" id="current-weather">
             <h2>Current Weather</h2>
             <h3 id="cityName">City Name</h3>
             <p id="condition">Weather condition will appear here</p>
@@ -51,7 +57,7 @@
             </div>
         </section>
 
-        <section class="forecast-section">
+        <section class="forecast-section" id="forecast">
             <h2>5-Day Forecast</h2>
 
             <div class="table-container">
@@ -74,7 +80,8 @@
     </main>
 
     <footer>
-        <p>SkyCast | Weather information powered by Open-Meteo</p>
+    <p>© 2026 SkyCast. All rights reserved.</p>
+    <p>Weather information powered by Open-Meteo.</p>
     </footer>
 
 </body>
